@@ -13,6 +13,8 @@
 		B1BCD5F21C85724300471FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BCD5F01C85724300471FE9 /* Main.storyboard */; };
 		B1BCD5F41C85724300471FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BCD5F31C85724300471FE9 /* Assets.xcassets */; };
 		B1BCD5F71C85724300471FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BCD5F51C85724300471FE9 /* LaunchScreen.storyboard */; };
+		B1BCD5FF1C85727100471FE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BCD5FE1C85727100471FE9 /* CoreLocation.framework */; };
+		B1BCD6011C85833100471FE9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BCD6001C85833100471FE9 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B1BCD5F31C85724300471FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1BCD5F61C85724300471FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1BCD5F81C85724300471FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1BCD5FE1C85727100471FE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1BCD6001C85833100471FE9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BCD6011C85833100471FE9 /* AddressBook.framework in Frameworks */,
+				B1BCD5FF1C85727100471FE9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,8 @@
 		B1BCD5DB1C85724300471FE9 = {
 			isa = PBXGroup;
 			children = (
+				B1BCD6001C85833100471FE9 /* AddressBook.framework */,
+				B1BCD5FE1C85727100471FE9 /* CoreLocation.framework */,
 				B1BCD5E61C85724300471FE9 /* MyLocation */,
 				B1BCD5E51C85724300471FE9 /* Products */,
 			);
@@ -262,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fancy.MyLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fancy.MyLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
